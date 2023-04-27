@@ -1,5 +1,12 @@
 void main() {
-  String myName = 'Edwin';
+  
+//   var myName = 'Fernando';
+//   late final myName;
+//   String myName = 'Fernando';
+  const myName = 'Fernando';
+    
+  
   print('Hola $myName');
-  print('hola ${myName.toUpperCase()}');
+  print('Hola ${ myName.toUpperCase() }');
+  print('Hola ${ 1 + 1 }');
 }
