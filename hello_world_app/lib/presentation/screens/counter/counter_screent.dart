@@ -5,10 +5,10 @@ class CounterScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
         body: Center(
           child: Column(
-            children: [
+            children: const [
               Text('10'),
               Text('Clicks')
             ],
