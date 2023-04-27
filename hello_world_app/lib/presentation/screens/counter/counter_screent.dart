@@ -10,6 +10,10 @@ class CounterScreen extends StatefulWidget {
 class _CounterScreenState extends State<CounterScreen> {
   int clickCounter = 0;
 
+  String click(){
+    return 'hola';
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +27,7 @@ class _CounterScreenState extends State<CounterScreen> {
             Text(clickCounter.toString(),
                 style: const TextStyle(
                     fontSize: 160, fontWeight: FontWeight.w100)),
-            const Text('Clicks', style: TextStyle(fontSize: 25))
+            Text(click(), style: const TextStyle(fontSize: 25))
           ],
         ),
       ),
