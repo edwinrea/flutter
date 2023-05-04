@@ -12,13 +12,10 @@ class DiscoverScreen extends StatelessWidget {
     final discoverProvider = context.watch<DiscoverProvider>();
 
 
-
     return Scaffold(
-      body: discoverProvider.initialLoading == true
-        ? const Center(
-          child: CircularProgressIndicator(strokeWidth: 3,),
-        )
-        : VideoScrollableView(videos: discoverProvider.videos)
+      body: discoverProvider.initialLoading
+        ? const Center( child: CircularProgressIndicator( strokeWidth: 2 ) )
+        : VideoScrollableView(videos: discoverProvider.videos )
     );
   }
 }
